@@ -1,0 +1,6 @@
+valgrind --leak-check=full \
+         --show-leak-kinds=all \
+         --track-origins=yes \
+         ./flog sync
+
+valgrind ./flog test/top-level-await/main.js

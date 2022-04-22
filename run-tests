@@ -1,0 +1,5 @@
+./flog test/top-level-await/main.js
+./flog test/dynamic-import/main.js
+./flog test/dependency-circle/main.js
+./flog test/import-json/main.js
+./flog test/import-library/main.js
