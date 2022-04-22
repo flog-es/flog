@@ -263,6 +263,9 @@ This approach makes sure a developer needs to conciously expose certain files
 that are outside of the project's scope. However, this needs to be done only
 once by recording it in `module.json`.
 
+The `exposes` directive wouldn't be useable in any *published* modules to hinder
+malicious actors from bypassing the sandbox.
+
 [synk1]: https://snyk.io/blog/open-source-npm-packages-colors-faker/
 [synk2]: https://snyk.io/blog/peacenotwar-malicious-npm-node-ipc-package-vulnerability/
 [npm-auto-updates]: https://docs.npmjs.com/about-semantic-versioning#using-semantic-versioning-to-specify-update-types-your-package-can-accept
