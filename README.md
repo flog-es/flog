@@ -18,7 +18,7 @@ there is already initial working code in this repository, it still mostly has a
 
 ## Contributing
 
-Please create a new issue for any comment / suggestion you have. Happy to for
+Please create a new issue for any comment / suggestion you have. Happy for
 any feedback!
 
 ## Why another JavaScript runtime? There is already Node.js and Deno?
@@ -71,7 +71,7 @@ import console from "console";
 console.log(await File.read("hello-world.txt"));
 ```
 
-A third-party module would always be namespaced-scoped:
+A third-party module would always be namespace-scoped:
 
 ```js
 import {app} from "primate/core";
@@ -200,7 +200,7 @@ $ flog app.js
 [i] inspect changes [s] skip 
 ```
 
-In addition, all standard library modules will be guaranteed to either exports
+In addition, all standard library modules will be guaranteed to either export
 classes or singletons, as fits them. Examples:
 
 * `filesystem` would export `Path`, `File` and `Directory`, to manipulate the
@@ -215,7 +215,7 @@ The modules that export classes could have both static and instance methods, as
 appropriate. For example, `Path.resolve` would resolve file system paths.
 `File.read("filename")` could be short for `new File("filename").read()`. These
 details will be decided on a per-module basis, but all standard library modules
-would adhere to the classes/singleton pattern, to be consistently approachable.
+would adhere to the class/singleton pattern, to be consistently approachable.
 
 ### Runtime security
 
@@ -260,7 +260,7 @@ In this case, a special directive will be available within `module.json`.
 ```
 
 This approach makes sure a developer needs to conciously expose certain files
-that are outside of the application scope. However, this needs to be done only
+that are outside of the project's scope. However, this needs to be done only
 once by recording it in `module.json`.
 
 [synk1]: https://snyk.io/blog/open-source-npm-packages-colors-faker/
