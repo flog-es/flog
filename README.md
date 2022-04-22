@@ -253,8 +253,8 @@ In this case, a special directive will be available within `module.json`.
 ```js
 {
    "exposes": {
-      "/etc/ssl/key.ssl": "r",
-      "/etc/ssl/certificate.ssl": "r"
+      "/etc/ssl/app.key": "r",
+      "/etc/ssl/app.crt": "r"
    }
 }
 ```
