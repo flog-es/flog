@@ -259,7 +259,7 @@ In this case, a special directive will be available within `module.json`.
 }
 ```
 
-This approach makes sure a developer needs to conciously expose certain files
+This approach makes sure a developer needs to consciously expose certain files
 that are outside of the project's scope. However, this needs to be done only
 once by recording it in `module.json`.
 
