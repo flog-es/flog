@@ -108,7 +108,7 @@ $ flog app.js
 :: Synchronizing module database...
 :: Checking for standard library module updates... 3 found 
 (1/3) upgrading streams (1.0.1 -> 1.0.2)
-(2/3) upgrading fs (1.0.0 -> 1.1.0)
+(2/3) upgrading filesystem (1.0.0 -> 1.1.0)
 (3/3) upgrading console (0.9.6 -> 0.9.7)
 :: Checking for third-party module updates... 2 found
 (1/2) upgrade primate/core (1.9.5 -> 1.9.6)
